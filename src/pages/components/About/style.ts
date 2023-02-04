@@ -31,7 +31,15 @@ export const AboutSection = styled(Section)`
         padding: 1rem 2rem;
         background: var(--purple);
         color: white;
-        border-radius: 5px;
+        border-radius: var(--radius);
+    }
+
+    .rec-arrow {
+        width: 25px;
+        height: 25px;
+        min-width: 25px;
+        line-height: 26px;
+        font-size: 1rem;
     }
 `;
 

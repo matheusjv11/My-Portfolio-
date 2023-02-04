@@ -1,22 +1,12 @@
 import { AboutSection } from "./style"
+import { experiences, hardSkills } from './service'
 import { Paragraph } from "@/pages/components/Base/Paragraph/index"
+import ExperienceCard from "../Base/ExperienceCard"
+import Carousel from "react-elastic-carousel";
 
-type HardSkill = {
-    logo: string,
-    name: string
-}
-
-const hardSkills: Array<String> = [
-    'Vue',
-    'React',
-    'TypeScript',
-    'PHP',
-    'Angular',
-    'GIT',
-    'Django',
-    'SQL Basics',
-    'HTML/CSS'
-]
+const breakPoints = [
+    { width: 2, itemsToShow: 1 },
+  ];
 
 export default function InitialPage () {
     return(
@@ -32,15 +22,18 @@ export default function InitialPage () {
                     <div className="skill__container">
                         {hardSkills.map(skill => {
                             return <span className="skill__badge">{skill}</span>
-                        })}
+                        })} 
                     </div>
                 </Paragraph>
             </div>
             <div>
-                <h3>Work Experience</h3>
-                <div>
-                    Here will be some of my experiencies
-                </div>
+                <Paragraph title="Work Experience">
+                    <Carousel breakPoints={breakPoints}>
+                        {experiences.map((xp) => {
+                            return <ExperienceCard {...xp} />
+                        })}
+                    </Carousel>
+                </Paragraph>
             </div>
         </AboutSection>
     )
