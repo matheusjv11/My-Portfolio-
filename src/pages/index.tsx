@@ -2,6 +2,7 @@ import Head from 'next/head'
 import Header from './components/Header/index'
 import InitialPage from './components/InitialPage/index'
 import About from './components/About/index'
+import Projects from './components/Projects/index'
 
 import styles from '@/styles/Home.module.css'
 
@@ -18,6 +19,7 @@ export default function Home() {
         <Header />
         <InitialPage />
         <About />
+        <Projects />
       </main>
     </>
   )

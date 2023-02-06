@@ -8,7 +8,6 @@ export const Image = styled.img`
 export const InitialSection = styled(Section)`
     display: flex;
     padding-top: 4rem;
-    background: var(--purple);
     color: white;  
 `;
 
