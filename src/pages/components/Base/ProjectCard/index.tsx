@@ -14,7 +14,9 @@ export default function ProjectCard ({
     return(
         <ProjectCardWrapper>
             <div className="project-banner">
-                <img src={banner} alt="Project banner preview" />
+                <a href={link} target="_blank">
+                    <img src={banner} alt="Project banner preview" />
+                </a>    
             </div>
            <div className="project-description">
                 <h3>{title}</h3>

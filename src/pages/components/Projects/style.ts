@@ -7,6 +7,10 @@ export const ProjectsSection = styled(Section)`
         padding-top: 100px;
         max-width: 1000px;
         margin: auto;
+
+        li {
+            margin-bottom: 10rem;
+        }
     }
 `;
 
