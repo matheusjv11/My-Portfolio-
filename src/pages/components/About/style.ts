@@ -3,6 +3,7 @@ import { Section } from '@/pages/components/Base/style'
 
 export const AboutSection = styled(Section)`
     display: flex;
+    flex-wrap: wrap;
     gap: 4rem;
     padding-top: 7rem;
     

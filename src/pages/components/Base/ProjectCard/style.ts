@@ -14,6 +14,7 @@ export const ProjectCardWrapper = styled.li`
         @media (max-width: 768px) {
             grid-column: 1 / -1;
             opacity: 0.2;
+            pointer-events: none;
         }
 
         img {
@@ -22,6 +23,11 @@ export const ProjectCardWrapper = styled.li`
             transition: 0.2s ease-out;
             box-shadow: rgb(0 0 0 / 26%) -3px 7px 10px;
             
+            @media (max-width: 660px) {
+                height: 410px;
+                object-fit: cover;
+            }
+
             &:hover {
                 transform: scale(1.05);
             }

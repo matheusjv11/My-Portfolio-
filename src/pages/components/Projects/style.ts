@@ -10,6 +10,10 @@ export const ProjectsSection = styled(Section)`
 
         li {
             margin-bottom: 10rem;
+
+            @media(max-width: 768px) {
+                margin-bottom: 5rem;
+            }
         }
     }
 `;
