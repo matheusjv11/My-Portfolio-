@@ -7,10 +7,25 @@ export const Image = styled.img`
 
 export const InitialSection = styled(Section)`
     display: flex;
-    padding-top: 4rem;
-    color: white;  
+    color: white;
+    position: relative;
+    justify-content: center;
+    align-items: center;
 `;
 
 export const PresentationText = styled.div`
    display: flex;
+   flex-direction: column;
+   max-width: 550px;
+   color: var(--light-text);
+    
+    h1 {
+        margin-bottom: 1rem;
+        font-size: 3.5rem;
+    }
+
+    h3 {
+        margin-bottom: 2rem;
+        font-weight: 500;
+    }
 `

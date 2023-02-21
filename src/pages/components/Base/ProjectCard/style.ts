@@ -58,6 +58,10 @@ export const ProjectCardWrapper = styled.li`
             display: flex;
             gap: 2rem;
             justify-content: flex-start; 
+
+            @media (max-width: 768px) {
+                font-size: 11px;
+            }
         }
 
         .links-row {

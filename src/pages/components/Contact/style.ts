@@ -2,14 +2,20 @@ import styled from 'styled-components'
 import { Section } from '@/pages/components/Base/style'
 
 export const ContactSection = styled(Section)`
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 2rem;
-    align-items: center;
+    display: flex;
 
-    @media(max-width: 768px) {
-        grid-template-columns: 1fr;
-        align-content: center;
+    .wrap {
+        max-width: 1000px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+        align-items: center;
+        margin: auto;
+
+        @media(max-width: 768px) {
+            grid-template-columns: 1fr;
+            align-content: center;
+        }
     }
 
     .description-card {

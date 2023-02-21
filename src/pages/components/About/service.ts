@@ -18,9 +18,9 @@ export const experiences: Array<Expericence> = [
         company: 'Nelogica',
         logo: 'images/logo-nelogica.png',
         resposibilities: [
-            'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
-            'It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.',
-            'The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using, making it look like readable English'
+            'Development with PHP, JavaScript, TypeScript, HTML/CSS, Vue and Laravel of internal applications for employees.',
+            "Work with different company's teams to finish projects",
+            'Versioning and deployment control of applications I work.'
         ],
         start: 'March 2021',
         end: 'Present',
@@ -30,12 +30,12 @@ export const experiences: Array<Expericence> = [
         company: 'Software Factory',
         logo: 'images/logo-uft.png',
         resposibilities: [
-            'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
-            'It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.',
-            'The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using, making it look like readable English'
+            'Developing systems from scratch with Django, Angular and React.',
+            'Data visualization with Python.',
+            'Designing banners and folders that were used in documents and publications.'
         ],
-        start: 'March 2021',
-        end: 'Present',
+        start: 'April 2020',
+        end: 'March 2021',
         role: 'Fullstack Developer'
     }
 ]

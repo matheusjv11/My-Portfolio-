@@ -12,10 +12,16 @@ export default function InitialPage () {
     return(
         <AboutSection id='about' className='home'>
             <div className="myself__paragraph">
-                <Paragraph title="About Me">
+                <Paragraph title="About Me" className="text">
                     <p>
-                        Gratuated in 2021 in computer science at Federal University of Tocantins, Brazil. I've been working as Software Developer since, focused on Web Development. 
-                        Altough I've worked in backend, creating components, funcionatilituis or even  optmizing the frontend that makes me happier.
+                        Gratuated in 2021, in <strong>Computer Science</strong> at Federal University of Tocantins, I've been working as Software Developer since. Focused on <strong>Web Development </strong>
+                        since 2019, most of the time in Fullstack roles.
+                    </p>
+                    <p>
+                        Currently I live in <strong>Porto Alegre, Brazil</strong>. My family is spread throughout the country, which made me love being in contact with different cultures.  
+                    </p>
+                    <p>
+                        Besides loving music, movies, games and development, I could say that my favorite hobby is <strong>rollerboarding</strong>.    
                     </p>
                 </Paragraph>
                 <Paragraph title="HardSkills">

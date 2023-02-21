@@ -5,7 +5,7 @@ export const AboutSection = styled(Section)`
     display: flex;
     flex-wrap: wrap;
     gap: 4rem;
-    padding-top: 7rem;
+    max-width: 1000px;
     
     > div {
         flex: 1 1 0;
@@ -29,18 +29,24 @@ export const AboutSection = styled(Section)`
     }
 
     .skill__badge {
-        padding: 1rem 2rem;
+        padding: 1rem;
         background: var(--purple);
         color: white;
         border-radius: var(--radius);
     }
 
+    .text {
+        p {
+            margin-bottom: 1rem;
+        }
+    }
+
+    .rec-slider-container {
+        margin: 0px;
+    }
+
     .rec-arrow {
-        width: 25px;
-        height: 25px;
-        min-width: 25px;
-        line-height: 26px;
-        font-size: 1rem;
+        display: none;
     }
 `;
 
