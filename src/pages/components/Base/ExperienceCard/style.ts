@@ -1,32 +1,12 @@
 import styled from 'styled-components'
 
 export const Card = styled.div`
-    background: #f9f9f9;
+    background: var(--purple);
+    color: var(--light-text);
     border-radius: var(--radius);
     box-shadow: rgb(67 71 85 / 27%) 0px 0px 0.25em, rgb(90 125 188 / 5%) 0px 0.25em 1em;
-
-    figure {
-        background: white;
-        display: flex;
-        justify-content: center;
-        padding: 1rem;
-        border-radius: var(--radius);
-        min-height: 107px;
-        align-items: center;
-
-        img {
-            max-height: 10vh;
-            display: block;
-            margin-left: auto;
-            margin-right: auto;
-            width: fit-content;
-            height: 107px;
-        }
-    }
-`
-
-export const RoleInfos = styled.div`
     padding: 1rem;
+    position: relative;
 
     .period {
         font-style: italic;
@@ -35,6 +15,10 @@ export const RoleInfos = styled.div`
     ul {
         padding: 1rem;
         list-style: none;
+    }
+
+    a {
+        text-decoration: underline;  
     }
 
     li {
@@ -46,7 +30,17 @@ export const RoleInfos = styled.div`
             content: "▹";
             position: absolute;
             left: 0px;
-            color: var(--purple);
+            color: white;
         }
+    }
+
+    .border-footer {
+        position: absolute;
+        height: 25px;
+        background: white;
+        bottom: 0;
+        width: 100%;
+        left: 0;
+        border-radius: 105px 105px 5px 5px;
     }
 `

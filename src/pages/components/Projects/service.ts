@@ -3,7 +3,7 @@ import {  Project } from "@/types/Project"
 export const Projects: Array<Project> = [
     {
         title: 'Spotify Playlist Clone',
-        description: 'I re-created the frontend of Boreal Coffees official web app because I got attracted to their beautiful UI. It was a great experience for me to build the entire frontend.',
+        description: 'I tried to re-created a simple playlist dashboard from Spotify. I was focused on understanding how audio process worked in a JavaScript enviroment.',
         link: 'https://music-playlist-psi.vercel.app/',
         github: 'https://github.com/matheusjv11/Spotify-clone',
         tech: [
@@ -11,31 +11,31 @@ export const Projects: Array<Project> = [
             'HTML/CSS',
             'JavaScript'
         ],
-        banner: 'images/project-spotify.png'
+        banner: 'images/project-spotify.gif'
     },
     {
         title: 'Table Tennis Game',
-        description: 'I re-created the frontend of Boreal Coffees official web app because I got attracted to their beautiful UI. It was a great experience for me to build the entire frontend.',
-        link: 'https://music-playlist-psi.vercel.app/',
-        github: 'https://github.com/matheusjv11/Spotify-clone',
+        description: 'Focused on learning how to use the Canvas, I started developing a table tennis game. Still in progress, I intend to use WebSocket to integrate players.',
+        link: '',
+        github: 'https://github.com/matheusjv11/table-tennis-show',
         tech: [
-            'Vue',
+            'Canvas',
             'HTML/CSS',
-            'JavaScript'
+            'TypeScript'
         ],
-        banner: 'images/project-spotify.png'
+        banner: 'images/project-tennis.gif'
     },
     {
-        title: 'Netflix Clone',
-        description: 'I re-created the frontend of Boreal Coffees official web app because I got attracted to their beautiful UI. It was a great experience for me to build the entire frontend.',
-        link: 'https://music-playlist-psi.vercel.app/',
-        github: 'https://github.com/matheusjv11/Spotify-clone',
+        title: 'Simple Netflix Clone',
+        description: 'In order to learn React, I made this project in a course in the middle of 2020. The goal was just study how the components on React where structured.',
+        link: 'https://californiaflix.vercel.app/',
+        github: 'https://github.com/matheusjv11/californiaflix',
         tech: [
-            'Vue',
+            'React',
             'HTML/CSS',
             'JavaScript'
         ],
-        banner: 'images/project-spotify.png'
+        banner: 'images/project-netflix.gif'
     }
 ]
 

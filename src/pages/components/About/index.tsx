@@ -34,7 +34,7 @@ export default function InitialPage () {
             </div>
             <div>
                 <Paragraph title="Work Experience">
-                    <Carousel breakPoints={breakPoints}>
+                    <Carousel breakPoints={breakPoints} itemPadding={[1, 5]}> 
                         {experiences.map((xp) => {
                             return <ExperienceCard {...xp} />
                         })}

@@ -1,3 +1,5 @@
+import { SecondTitle } from '@/pages/components/Base/style'
+
 // Component 
 type ParagraphType = {
     title: string,
@@ -9,7 +11,7 @@ type ParagraphType = {
 export function Paragraph ({title,  children, className}: ParagraphType) {
     return (
         <div className={className} >
-            <h3>{ title }</h3>
+            <SecondTitle>{ title }</SecondTitle>
             { children }
         </div>
     )

@@ -6,14 +6,15 @@ export const AboutSection = styled(Section)`
     flex-wrap: wrap;
     gap: 4rem;
     max-width: 1000px;
+    align-content: center;
     
     > div {
         flex: 1 1 0;
-    }
+        min-width: 277px;
 
-    h3 {
-        margin-bottom: 2rem;
-        font-size: 1.7rem;
+        @media (max-width: 350px) {
+            min-width: unset;
+        }
     }
 
     .myself__paragraph {
@@ -36,7 +37,7 @@ export const AboutSection = styled(Section)`
     }
 
     .text {
-        p {
+        p:not(:last-of-type){
             margin-bottom: 1rem;
         }
     }
@@ -47,6 +48,10 @@ export const AboutSection = styled(Section)`
 
     .rec-arrow {
         display: none;
+    }
+
+    .rec-item-wrapper {
+        height: 100%;
     }
 `;
 

@@ -30,7 +30,7 @@ export default function ProjectCard ({
                 </div>
                 <div className="links-row">
                     <LinkButton title='Git' url={github}/>
-                    <LinkButton title='Live' url={link}/>
+                    {link.length > 0 && (<LinkButton title='Live' url={link}/>)}
                 </div>
            </div>
         </ ProjectCardWrapper>

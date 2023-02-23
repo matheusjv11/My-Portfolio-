@@ -1,5 +1,5 @@
 import { Expericence } from "@/types/Experience";
-import { Card, RoleInfos } from "./style";
+import { Card } from "./style";
 
 /* referencia daqui https://olaolu.dev/work/ */
 
@@ -8,26 +8,21 @@ export default function ExperienceCard ({
     resposibilities,
     start,
     end,
-    logo
+    company,
+    linkedin
 }: Expericence) {
     return ( 
-        <>
-            <Card>
-                <figure>
-                    <img src={logo} alt="Company's logo" />
-                </figure>
-                <RoleInfos>
-                    <p className="period">{start} - {end}</p>
-                    <h4>{role}</h4>
-                    <ul>
-                        {resposibilities.map((resp) => {
-                            return <li>
-                                <p>{resp}</p>
-                            </li>
-                        })}
-                    </ul>
-                </RoleInfos>
-            </Card>
-        </>
+        <Card>
+            <p className="period">{start} - {end}</p>
+            <h4>{role} @ <a href={linkedin}>{company}</a></h4>
+            <ul>
+                {resposibilities.map((resp) => {
+                    return <li>
+                        <p>{resp}</p>
+                    </li>
+                })}
+            </ul>
+            <div className="border-footer"></div>
+        </Card>
     )
 }

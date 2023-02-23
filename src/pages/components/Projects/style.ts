@@ -4,17 +4,24 @@ import { Section } from '@/pages/components/Base/style'
 export const ProjectsSection = styled(Section)`
     ul {
         list-style-type: none;
-        padding-top: 100px;
-        max-width: 1000px;
-        margin: auto;
 
-        li {
+        li:not(:last-of-type) {
             margin-bottom: 10rem;
 
             @media(max-width: 768px) {
                 margin-bottom: 5rem;
             }
         }
+    }
+
+    h3, ul {
+        max-width: 1000px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    h3 {
+        text-align: center;
     }
 `;
 
