@@ -4,6 +4,7 @@ import InitialPage from './components/InitialPage'
 import About from './components/About'
 import Projects from './components/Projects'
 import Contact from './components/Contact'
+import MobileHeader from './components/MobileHeader'
 
 import styles from '@/styles/Home.module.css'
 import Footer from './components/Footer'
@@ -24,6 +25,7 @@ export default function Home() {
         <Projects />
         <Contact />
         <Footer />
+        <MobileHeader />
       </main>
     </>
   )

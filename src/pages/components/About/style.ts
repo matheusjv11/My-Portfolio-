@@ -7,6 +7,7 @@ export const AboutSection = styled(Section)`
     gap: 4rem;
     max-width: 1000px;
     align-content: center;
+    color: var(--black-text);
     
     > div {
         flex: 1 1 0;

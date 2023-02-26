@@ -3,6 +3,10 @@ import { Section } from '@/pages/components/Base/style'
 
 export const Image = styled.img`
     max-height: 400px;
+
+    @media (max-width: 768px) {
+        max-height: 250px;
+    }
 `
 
 export const InitialSection = styled(Section)`
@@ -11,6 +15,10 @@ export const InitialSection = styled(Section)`
     position: relative;
     justify-content: center;
     align-items: center;
+    padding: 6rem;
+    padding-bottom: 4rem;
+    flex-wrap: wrap;
+    gap: 3rem;
 `;
 
 export const PresentationText = styled.div`
@@ -22,6 +30,10 @@ export const PresentationText = styled.div`
     h1 {
         margin-bottom: 1rem;
         font-size: 3.5rem;
+
+        @media (max-width: 768px) {
+            font-size: 2rem;
+        }
     }
 
     h3 {

@@ -6,7 +6,7 @@ export const ProjectsSection = styled(Section)`
         list-style-type: none;
 
         li:not(:last-of-type) {
-            margin-bottom: 10rem;
+            margin-bottom: 8rem;
 
             @media(max-width: 768px) {
                 margin-bottom: 5rem;
@@ -14,13 +14,14 @@ export const ProjectsSection = styled(Section)`
         }
     }
 
-    h3, ul {
+    .section__title, ul {
         max-width: 1000px;
         margin-left: auto;
         margin-right: auto;
+        margin-bottom: 4rem;
     }
 
-    h3 {
+    .section__title:first-of-type {
         text-align: center;
     }
 `;

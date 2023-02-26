@@ -9,8 +9,8 @@ type Props = {
 export default function SocialBar ({fixed = false}: Props) {
     return(
         <SocialBarWrap className={fixed ? 'fixed' : ''}>
-            {Socials.map(social => {
-                return  <a href={social.link} target="_blank">
+            {Socials.map((social, index) => {
+                return  <a key={index} href={social.link} target="_blank">
                     <img src={social.icon} alt="Social logo" />
                 </a>
             })}

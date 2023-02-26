@@ -14,7 +14,7 @@ export default function ProjectCard ({
     return(
         <ProjectCardWrapper>
             <div className="project-banner">
-                <a href={link} target="_blank">
+                <a href={link.length ? link : github} target="_blank">
                     <img src={banner} alt="Project banner preview" />
                 </a>    
             </div>
@@ -24,8 +24,8 @@ export default function ProjectCard ({
                     <p>{description}</p>
                 </div>
                 <div className="tech-row">
-                    { tech.map(t => {
-                        return <p>{t}</ p> 
+                    { tech.map((t, i) => {
+                        return <p key={i}>{t}</ p> 
                     })}
                 </div>
                 <div className="links-row">

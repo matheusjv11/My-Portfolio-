@@ -12,7 +12,7 @@ export const Section = styled.section`
 
 const textColors = {
     white: 'var(--light-text)',
-    black: 'black'
+    black: 'var(--black-text)'
 }
 
 export const SecondTitle = styled.h3`

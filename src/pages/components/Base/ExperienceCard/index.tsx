@@ -16,8 +16,8 @@ export default function ExperienceCard ({
             <p className="period">{start} - {end}</p>
             <h4>{role} @ <a href={linkedin}>{company}</a></h4>
             <ul>
-                {resposibilities.map((resp) => {
-                    return <li>
+                {resposibilities.map((resp, index) => {
+                    return <li key={index}>
                         <p>{resp}</p>
                     </li>
                 })}

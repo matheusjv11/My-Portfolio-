@@ -2,8 +2,7 @@ import styled from 'styled-components'
 
 export const List = styled.ul`
     position: fixed;
-    top: 1rem;
-    left: 35%;    
+    top: ${props => props.hidden ? '-4rem' : '1rem'};  
     list-style: none;
     display: flex;
     gap: 2rem;
@@ -17,6 +16,11 @@ export const List = styled.ul`
     border-radius: 30px;
     box-shadow: rgb(0 0 0 / 15%) 0px 2px 8px;
     mix-blend-mode: difference;
+    transition: top 0.3s ease-in-out;
+
+    @media (max-width: 768px) {
+        display: none;
+    }
 
     li {
         float: left;

@@ -3,6 +3,7 @@ import { Section } from '@/pages/components/Base/style'
 
 export const ContactSection = styled(Section)`
     display: flex;
+    color: var(--black-text);
 
     .wrap {
         max-width: 1000px;

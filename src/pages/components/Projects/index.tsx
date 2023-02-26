@@ -6,10 +6,10 @@ import { SecondTitle } from '@/pages/components/Base/style'
 export default function Projects () {
     return(
         <ProjectsSection id='projects'>
-            <SecondTitle color="white">Projects</SecondTitle>
+            <SecondTitle className="section__title" color="white">Projects</SecondTitle>
             <ul>
-                { MyProjects.map( project => {
-                    return <ProjectCard {...project} />
+                { MyProjects.map((project, index) => {
+                    return <ProjectCard key={index} {...project} />
                 })}
             </ul>
         </ProjectsSection>
