@@ -8,6 +8,10 @@ export const Card = styled.div`
     padding: 1rem;
     position: relative;
 
+    p, h4 {
+        text-align: left;
+    }
+
     .period {
         font-style: italic;
     }

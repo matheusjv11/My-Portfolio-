@@ -1,4 +1,4 @@
-import { SecondTitle } from '@/pages/components/Base/style'
+import { SecondTitle } from '@/styles/base'
 
 // Component 
 type ParagraphType = {
@@ -8,7 +8,7 @@ type ParagraphType = {
 }
 
 
-export function Paragraph ({title,  children, className}: ParagraphType) {
+export default function Paragraph ({title,  children, className}: ParagraphType) {
     return (
         <div className={className} >
             <SecondTitle>{ title }</SecondTitle>

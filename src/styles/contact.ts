@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { Section } from '@/pages/components/Base/style'
+import { Section } from '@/styles/base'
 
 export const ContactSection = styled(Section)`
     display: flex;

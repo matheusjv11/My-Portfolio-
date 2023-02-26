@@ -1,4 +1,4 @@
-import { MobileHeaderWrapper } from "./style";
+import { MobileHeaderWrapper } from "@/styles/mobileHeader";
 import { useState } from 'react'
 
 import Button from '@mui/material/Button';

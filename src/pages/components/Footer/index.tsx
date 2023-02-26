@@ -1,5 +1,5 @@
 
-import { FooterWrap } from "./style"
+import { FooterWrap } from "@/styles/footer"
 import SocialBar from "../Base/SocialBar"
 
 export default function Footer () {
@@ -8,7 +8,7 @@ export default function Footer () {
             <main>
                 <div className="about">
                     <h3>Matheus Almeida</h3>
-                    <p>Passionate for web development, I'm a software developer who loves creating optimized and inclusive frontend. Here you'll find a little of who I am and what I do.</p>
+                    <p>Passionate for web development, I am a software developer who loves creating optimized and inclusive frontend. Here you will find a little of who I am and what I do.</p>
                 </div>
                 <div>
                     <h3>Social</h3>

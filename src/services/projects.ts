@@ -11,7 +11,7 @@ export const Projects: Array<Project> = [
             'HTML/CSS',
             'JavaScript'
         ],
-        banner: 'images/project-spotify.gif'
+        banner: '/images/project-spotify.gif'
     },
     {
         title: 'Table Tennis Game',
@@ -23,7 +23,7 @@ export const Projects: Array<Project> = [
             'HTML/CSS',
             'TypeScript'
         ],
-        banner: 'images/project-tennis.gif'
+        banner: '/images/project-tennis.gif'
     },
     {
         title: 'Simple Netflix Clone',
@@ -35,7 +35,7 @@ export const Projects: Array<Project> = [
             'HTML/CSS',
             'JavaScript'
         ],
-        banner: 'images/project-netflix.gif'
+        banner: '/images/project-netflix.gif'
     }
 ]
 

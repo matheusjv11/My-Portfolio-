@@ -1,6 +1,7 @@
-import { AboutSection } from "./style"
-import { experiences, hardSkills } from './service'
-import { Paragraph } from "@/pages/components/Base/Paragraph/index"
+import React from 'react'
+import { AboutSection } from "@/styles/about"
+import { experiences, hardSkills } from '@/services/about'
+import Paragraph from "@/pages/components/Base/Paragraph"
 import ExperienceCard from "../Base/ExperienceCard"
 import Carousel from "react-elastic-carousel";
 
@@ -14,7 +15,7 @@ export default function InitialPage () {
             <div className="myself__paragraph">
                 <Paragraph title="About Me" className="text">
                     <p>
-                        Gratuated in 2021, in <strong>Computer Science</strong> at Federal University of Tocantins, I've been working as Software Developer since. Focused on <strong>Web Development </strong>
+                        Gratuated in 2021, in <strong>Computer Science</strong> at Federal University of Tocantins, I have been working as Software Developer since. Focused on <strong>Web Development </strong>
                         since 2019, most of the time in Fullstack roles.
                     </p>
                     <p>
@@ -26,18 +27,20 @@ export default function InitialPage () {
                 </Paragraph>
                 <Paragraph title="HardSkills">
                     <div className="skill__container">
-                        {hardSkills.map(skill => {
-                            return <span className="skill__badge">{skill}</span>
+                        {hardSkills.map((skill, i) => {
+                            return <span key={i} className="skill__badge">{skill}</span>
                         })} 
                     </div>
                 </Paragraph>
             </div>
             <div>
                 <Paragraph title="Work Experience">
-                    <Carousel breakPoints={breakPoints} itemPadding={[1, 5]}> 
-                        {experiences.map((xp) => {
-                            return <ExperienceCard {...xp} />
-                        })}
+                    {/* 
+                    // @ts-ignore */}
+                    <Carousel breakPoints={breakPoints} itemPadding={[1, 5]} isRTL={true}> 
+                        {experiences.map((xp, i) => (
+                            <ExperienceCard key={i} {...xp} />
+                        ))}
                     </Carousel>
                 </Paragraph>
             </div>

@@ -1,5 +1,5 @@
 
-import { ContactSection } from "./style"
+import { ContactSection } from "@/styles/contact"
 import TextField from '@mui/material/TextField'
 import Button from '@mui/material/Button'
 import { createTheme, ThemeProvider } from '@mui/material/styles';
@@ -20,7 +20,7 @@ export default function Contact () {
                 <ThemeProvider theme={theme}>
                     <div className="description-card">
                         <h2>Contact me</h2>
-                        <p>There is somenthing you want to discuss? Fill the form and I'll get back to you as soons as possible. 😄</p>
+                        <p>There is somenthing you want to discuss? Fill the form and I will get back to you as soons as possible. 😄</p>
                     </div>
                     
                     <form>

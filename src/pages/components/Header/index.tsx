@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react'
-import { List } from './style'
+import { List } from '@/styles/header'
 
 export default function Header() {
     let lastScroll = 0

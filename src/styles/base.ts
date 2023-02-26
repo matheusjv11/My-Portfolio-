@@ -10,7 +10,11 @@ export const Section = styled.section`
     }
 `
 
-const textColors = {
+type TextColor = {
+    white: string,
+    black: string
+}
+const textColors:TextColor = {
     white: 'var(--light-text)',
     black: 'var(--black-text)'
 }
@@ -18,5 +22,5 @@ const textColors = {
 export const SecondTitle = styled.h3`
     margin-bottom: 2rem;
     font-size: 1.7rem;
-    color: ${props => props.color ? textColors[props.color] : textColors.black};
+    color: ${props => props.color ? textColors[props.color as keyof TextColor] : textColors.black};
 `

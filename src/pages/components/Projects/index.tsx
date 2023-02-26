@@ -1,7 +1,7 @@
 import ProjectCard from "../Base/ProjectCard"
-import { Projects as MyProjects } from "./service"
-import { ProjectsSection } from "./style"
-import { SecondTitle } from '@/pages/components/Base/style'
+import { Projects as MyProjects } from "@/services/projects"
+import { ProjectsSection } from "@/styles/projects"
+import { SecondTitle } from '@/styles/base'
 
 export default function Projects () {
     return(

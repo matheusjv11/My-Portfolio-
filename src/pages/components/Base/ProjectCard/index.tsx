@@ -1,6 +1,6 @@
 import { Project } from "@/types/Project"
 import LinkButton from "../LinkButton"
-import { ProjectCardWrapper } from "./style"
+import { ProjectCardWrapper } from "@/styles/projectCard"
 
 
 export default function ProjectCard ({
@@ -14,7 +14,7 @@ export default function ProjectCard ({
     return(
         <ProjectCardWrapper>
             <div className="project-banner">
-                <a href={link.length ? link : github} target="_blank">
+                <a href={link && link.length ? link : github} target="_blank" rel="noreferrer">
                     <img src={banner} alt="Project banner preview" />
                 </a>    
             </div>
@@ -24,13 +24,13 @@ export default function ProjectCard ({
                     <p>{description}</p>
                 </div>
                 <div className="tech-row">
-                    { tech.map((t, i) => {
+                    { tech?.map((t, i) => {
                         return <p key={i}>{t}</ p> 
                     })}
                 </div>
                 <div className="links-row">
                     <LinkButton title='Git' url={github}/>
-                    {link.length > 0 && (<LinkButton title='Live' url={link}/>)}
+                    {link && (link.length > 0) && (<LinkButton title='Live' url={link}/>)}
                 </div>
            </div>
         </ ProjectCardWrapper>
