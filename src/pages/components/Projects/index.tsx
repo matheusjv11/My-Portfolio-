@@ -4,6 +4,7 @@ import { ProjectsSection } from "@/styles/projects"
 import { SecondTitle } from '@/styles/base'
 
 export default function Projects () {
+    console.log(process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID)
     return(
         <ProjectsSection id='projects'>
             <SecondTitle className="section__title" color="white">Projects</SecondTitle>
