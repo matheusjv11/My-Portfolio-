@@ -37,7 +37,7 @@ export default function InitialPage () {
                 <Paragraph title="Work Experience">
                     {/* 
                     // @ts-ignore */}
-                    <Carousel breakPoints={breakPoints} itemPadding={[1, 5]} isRTL={true}> 
+                    <Carousel breakPoints={breakPoints} itemPadding={[1, 5]} > 
                         {experiences.map((xp, i) => (
                             <ExperienceCard key={i} {...xp} />
                         ))}

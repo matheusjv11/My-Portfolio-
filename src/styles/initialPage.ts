@@ -19,6 +19,10 @@ export const InitialSection = styled(Section)`
     padding-bottom: 4rem;
     flex-wrap: wrap;
     gap: 3rem;
+
+    @media (max-width: 768px) {
+        padding-top: 1.5rem;
+    }
 `;
 
 export const PresentationText = styled.div`
@@ -32,7 +36,7 @@ export const PresentationText = styled.div`
         font-size: 3.5rem;
 
         @media (max-width: 768px) {
-            font-size: 2rem;
+            font-size: 3rem;
         }
     }
 

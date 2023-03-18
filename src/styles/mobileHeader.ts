@@ -6,8 +6,8 @@ export const MobileHeaderWrapper = styled.div`
     z-index: 10;
     right: 2rem;
     top: 2rem;
-    backdrop-filter: blur(15px);
-    mix-blend-mode: difference;
+    background: var(--purple);
+    color: var(--white);
     border-radius: 25px;
 
     .MuiButtonBase-root {
