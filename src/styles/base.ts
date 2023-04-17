@@ -8,6 +8,10 @@ export const Section = styled.section`
     @media (max-width: 768px) {
         padding: 2rem;
     }
+
+    &:last-of-type {
+        min-height: 75vh;
+    }
 `
 
 type TextColor = {

@@ -1,8 +1,5 @@
 import { ContactSection } from "@/styles/contact";
-import TextField from "@mui/material/TextField";
-import Button from "@mui/material/Button";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
-import emailjs from "@emailjs/browser";
 
 const theme = createTheme({
   palette: {
@@ -13,6 +10,11 @@ const theme = createTheme({
 });
 
 export default function Contact() {
+
+  const openEmailPage = () => {
+    window.location.href = "mailto:matheusjv14@gmail.com?subject=From your personal website&body=I'm...";
+  }
+
   return (
     <ContactSection id="contact">
       <div className="wrap">
@@ -20,11 +22,12 @@ export default function Contact() {
           <div className="description-card">
             <h2>Contact me</h2>
             <p>
-              There is somenthing you want to discuss? Reach me through LinkedIn Or E-mail. 
+              There is something you want to discuss? Reach me through the button below, which will redirect you to an email creation page. 
               I would love to trade ideas and inspirations 😄.
             </p>
           </div>
         </ThemeProvider>
+        <button onClick={openEmailPage}>I'm the button :)</button>
       </div>
     </ContactSection>
   );

@@ -9,7 +9,22 @@ import MobileHeader from './components/MobileHeader'
 import styles from '@/styles/Home.module.css'
 import Footer from './components/Footer'
 
+import { useState, useEffect } from 'react';
+
 export default function Home() {
+
+  const [isLoading, setIsLoading] = useState(true);
+
+  useEffect(() => {
+    const timeoutId = setTimeout(() => {
+      setIsLoading(false);
+    }, 1000);
+
+    return () => {
+      clearTimeout(timeoutId);
+    };
+  }, []);
+
   return (
     <>
       <Head>
@@ -26,6 +41,9 @@ export default function Home() {
         <Contact />
         <Footer />
         <MobileHeader />
+        {isLoading ? <div className='initialLoading'>
+        <div className="lds-spinner"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+        </div> : null}
       </main>
     </>
   )

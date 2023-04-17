@@ -9,6 +9,14 @@ export const SocialBarWrap = styled.div`
         left: 1rem;
         flex-direction: column;
         top: 35%;
+        
+        a{
+            transition: all 0.1s ease-in;
+            
+            &:hover {
+               transform: scale(1.1);
+           }
+        }
 
         img {
             height: 100%;
