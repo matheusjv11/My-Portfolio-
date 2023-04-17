@@ -27,7 +27,7 @@ export default function Contact() {
             </p>
           </div>
         </ThemeProvider>
-        <button onClick={openEmailPage}>I'm the button :)</button>
+        <button onClick={openEmailPage}>I am the button :)</button>
       </div>
     </ContactSection>
   );
