@@ -3,7 +3,7 @@ import {  Project } from "@/types/Project"
 export const Projects: Array<Project> = [
     {
         title: 'Spotify Playlist Clone',
-        description: 'I tried to re-created a simple playlist dashboard from Spotify. I was focused on understanding how audio process worked in a JavaScript enviroment.',
+        description: 'I developed a simple playlist dashboard from Spotify. I was focused on understanding how audio process worked in a JavaScript enviroment.',
         link: 'https://music-playlist-psi.vercel.app/',
         github: 'https://github.com/matheusjv11/Spotify-clone',
         tech: [
