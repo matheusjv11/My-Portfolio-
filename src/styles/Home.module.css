@@ -7,4 +7,51 @@
 
 .main section:nth-child(even) {
   background: var(--purple);
+  
+}
+
+.main section:nth-child(even)::after, .main section:nth-child(even)::before {
+  content: "";
+  position: absolute;
+  background: rgba(255,255,255,.04);
+  z-index: 0;
+  will-change: border-radius,transform;
+  pointer-events: none;
+}
+
+.main section:nth-child(even)::before {
+  width: 60vmax;
+  height: 60vmax;
+  left: -20vmin;
+  top: -20vmin;
+  animation: morph 15s linear infinite alternate, spin 30s linear infinite;
+  will-change: border-radius,transform;
+  transform-origin: 55% 55%;
+  pointer-events: none;
+}
+
+.main section:nth-child(even)::after {
+  width: 70vmin;
+  height: 70vmin;
+  left: auto;
+  right: -10vmin;
+  top: auto;
+  bottom: 0;
+  animation: morph 10s linear infinite alternate, spin 36s linear infinite reverse;
+  transform-origin: 20% 20%;
+}
+
+@keyframes morph {
+  0% {
+    border-radius: 40% 60% 60% 40%/70% 30%;
+  }
+  100% {
+    border-radius: 40% 60%;
+  }
+}
+
+@keyframes spin {
+  100% {
+    transform: rotate(1turn);
+  }
 }
