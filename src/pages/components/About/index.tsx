@@ -4,6 +4,7 @@ import { experiences, hardSkills } from "@/services/about";
 import Paragraph from "@/pages/components/Base/Paragraph";
 import ExperienceCard from "../Base/ExperienceCard";
 import Carousel from "react-elastic-carousel";
+import SkillSlider from "../SkillSlider";
 
 const breakPoints = [{ width: 2, itemsToShow: 1 }];
 
@@ -28,17 +29,6 @@ export default function InitialPage() {
             that my favorite hobby is <strong>rollerboarding</strong>.
           </p>
         </Paragraph>
-        <Paragraph title="HardSkills">
-          <div className="skill__container">
-            {hardSkills.map((skill, i) => {
-              return (
-                <span key={i} className="skill__badge">
-                  {skill}
-                </span>
-              );
-            })}
-          </div>
-        </Paragraph>
       </div>
       <div>
         <Paragraph title="Work Experience">
@@ -51,6 +41,9 @@ export default function InitialPage() {
           </Carousel>
         </Paragraph>
       </div>
+      <Paragraph title="HardSkills">
+        <SkillSlider />
+      </Paragraph>
     </AboutSection>
   );
 }

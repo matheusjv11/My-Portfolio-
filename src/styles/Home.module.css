@@ -41,6 +41,12 @@
   transform-origin: 20% 20%;
 }
 
+@media (max-width: 1020px) {
+  .main section:nth-child(even)::after, .main section:nth-child(even)::before {
+   display: none;
+  }
+} 
+
 @keyframes morph {
   0% {
     border-radius: 40% 60% 60% 40%/70% 30%;
