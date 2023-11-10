@@ -6,9 +6,9 @@ export default function SkillSlider() {
     <S.Wrapper>
       <S.Slider>
         <S.AnimatedDiv>
-          {[...hardSkills, ...hardSkills].map((skill) => {
+          {[...hardSkills, ...hardSkills].map((skill, i) => {
             return (
-              <S.MainTechCard>
+              <S.MainTechCard key={i}>
                 <S.Card title={skill.label}>
                   <img src={skill.image} alt={skill.label} />
                 </S.Card>
