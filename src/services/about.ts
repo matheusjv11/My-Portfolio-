@@ -44,16 +44,15 @@ export const hardSkills: Array<{
 
 export const experiences: Array<Expericence> = [
   {
-    company: "Software Factory",
-    linkedin: "https://www.linkedin.com/school/uftoficial/",
+    company: "Cast Group",
+    linkedin: "https://www.linkedin.com/company/cast-group/",
     resposibilities: [
-      "Developing systems from scratch with Django, Angular and React.",
-      "Data visualization with Python.",
-      "Designing banners and folders that were used in documents and publications.",
+      "My main focus is on creating new systems, in which I am involved, from prototyping in Figma to configuring proxies on web servers.",
+      "Although I have a stronger focus on frontend development using Nuxt and Vue, I play a significant role in the architecture of the projects.",
     ],
-    start: "April 2020",
-    end: "March 2021",
-    role: "Fullstack Developer",
+    start: "July 2023",
+    end: "Present",
+    role: "Software Developer",
   },
   {
     company: "Nelogica",
@@ -64,7 +63,19 @@ export const experiences: Array<Expericence> = [
       "Versioning and deployment control of applications I work.",
     ],
     start: "March 2021",
-    end: "Present",
+    end: "July 2023",
     role: "Software Developer",
+  },
+  {
+    company: "Software Factory",
+    linkedin: "https://www.linkedin.com/school/uftoficial/",
+    resposibilities: [
+      "Developing systems from scratch with Django, Angular and React.",
+      "Data visualization with Python.",
+      "Designing banners and folders that were used in documents and publications.",
+    ],
+    start: "April 2020",
+    end: "March 2021",
+    role: "Fullstack Developer",
   },
 ];
